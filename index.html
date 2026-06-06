@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta name="description" content="# Canteen 3D Web App PRD
+
+## Objective
+Transform the legacy 'Canteen' project into a modern, high-performance, JSON-driv">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आपलं Umred Canteen 3D</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    
+    <div class="ui-layer">
+        <aside class="sidebar glass-effect">
+            <div class="logo">
+                <img src="images/logo.png" alt="Vidarbh Canteen Logo" class="brand-logo">
+                <h2>Umred<span class="highlight">Canteen</span></h2>
+                <div class="sub-logo">आपला स्वाद, आपली माणसं</div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li class="active" data-view="dashboard">
+                        <span class="icon">🐅</span> Dashboard
+                    </li>
+                    <li data-view="products">
+                        <span class="icon">🍊</span> Menu (मेन्यू)
+                    </li>
+                    <li data-view="categories">
+                        <span class="icon">🍛</span> Categories
+                    </li>
+                    <li data-view="orders">
+                        <span class="icon">📦</span> Orders (ऑर्डर्स)
+                    </li>
+                    <li data-view="clients">
+                        <span class="icon">🙏</span> Customers (ग्राहक)
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar glass-effect">
+                <h1 id="page-title">Dashboard</h1>
+                <div class="user-profile">
+                    <img src="https://ui-avatars.com/api/?name=Dada&background=ff7b00&color=fff" alt="Admin">
+                    <span>Dada (Admin)</span>
+                </div>
+            </header>
+
+            <div id="content-container" class="content-container">
+                <!-- Content will be injected here dynamically -->
+            </div>
+        </main>
+    </div>
+
+    <script defer src="app.js"></script>
+</body>
+</html>

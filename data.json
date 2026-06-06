@@ -1,0 +1,53 @@
+{
+  "website": {
+    "title": "Umred Canteen - आपला स्वाद",
+    "short_title": "Umred Canteen",
+    "currency_symbol": "₹"
+  },
+  "categories": [
+    { "id": 1, "name": "Vidarbha Specials", "active": 1 },
+    { "id": 2, "name": "Canteen Mess Meals", "active": 1 },
+    { "id": 3, "name": "Haldiram's Sweets", "active": 1 },
+    { "id": 4, "name": "Snacks & Breakfast", "active": 1 }
+  ],
+  "products": [
+    { "id": 1, "name": "Zunka Bhakar", "categoryId": 1, "quantity": 120, "rate": 60, "active": 1 },
+    { "id": 2, "name": "Gola Bhaat", "categoryId": 1, "quantity": 80, "rate": 80, "active": 1 },
+    { "id": 3, "name": "Patodi Rassa", "categoryId": 1, "quantity": 90, "rate": 100, "active": 1 },
+    { "id": 4, "name": "Maharashtrian Veg Thali (Annapurna Mess Style)", "categoryId": 2, "quantity": 200, "rate": 120, "active": 1 },
+    { "id": 5, "name": "Barapatre Saoji Chicken Thali", "categoryId": 2, "quantity": 150, "rate": 250, "active": 1 },
+    { "id": 6, "name": "Haldiram's Orange Sweets", "categoryId": 3, "quantity": 300, "rate": 200, "active": 1 },
+    { "id": 7, "name": "Haldiram's Soan Papdi", "categoryId": 3, "quantity": 250, "rate": 150, "active": 1 },
+    { "id": 8, "name": "Nagpuri Tarri Poha", "categoryId": 4, "quantity": 200, "rate": 40, "active": 1 },
+    { "id": 9, "name": "Haldiram's Aloo Bhujia", "categoryId": 4, "quantity": 500, "rate": 50, "active": 1 }
+  ],
+  "clients": [
+    { "id": 1, "name": "Ramesh Bhau", "gender": "Male", "contact": "9890123456", "address": "Karhandla Road, Umred" },
+    { "id": 2, "name": "Sachin Patil", "gender": "Male", "contact": "9823456789", "address": "Bhiwapur Naka, Umred" }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "date": "2023-10-25",
+      "clientId": 1,
+      "subTotal": 310.00,
+      "vat": 15.50,
+      "grandTotal": 325.50,
+      "items": [
+        { "productId": 1, "quantity": 1, "rate": 60, "total": 60 },
+        { "productId": 5, "quantity": 1, "rate": 250, "total": 250 }
+      ]
+    },
+    {
+      "id": 2,
+      "date": "2023-10-25",
+      "clientId": 2,
+      "subTotal": 400.00,
+      "vat": 20.00,
+      "grandTotal": 420.00,
+      "items": [
+        { "productId": 6, "quantity": 2, "rate": 200, "total": 400 }
+      ]
+    }
+  ]
+}
